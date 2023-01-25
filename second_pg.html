@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+       
+
+    </head>
+    <body style="background-image: linear-gradient(to right, white ,rgb(99, 31, 99));">
+       
+        <header>
+    
+            <ul class="nav3" >
+                <li class="box1"><img class="logo" src="logo.png"> </li>
+                <li class="box2">Hello Everyone...!!</li>
+                <li></li>
+                
+            </ul>
+      
+      
+          <div class="nav">
+              <ul class="nav2" >
+                  <li><a href="first_pg.html" >Main</a></li>
+                  <li><a href="second_pg.html" >About</a></li>
+                  <li><a href="third_pg.html" >Personal Projects</a></li>
+                  <li><a href="fourth_pg.html" >Newsletter</a></li>
+                
+                  
+              </ul>
+          </div>
+      
+      </header>
+        
+    <div id ="about">
+        <div class = "container1">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic2.png"></br></br></br></br>
+                    <div  class = "container2">
+                        <p target>Here are a few technologies I've been working with recently:
+                    </p><ul></br>
+                            <li style="list-style-image: url('sqpurple.gif');"><h3>◉ HTML5</h3></li>
+                            <li><h3>◉ Java Script</h3></li>
+                            <li><h3>◉ CSS3</h3></li>
+                            <li><h3>◉ Python</h3></li>
+                            <li><h3>◉ Java</h3></li>
+                            <li><h3>◉ Figma</h3></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="about-col-2">
+                    <h1 class="title">About Me ..</h1></br></br>
+                    <p><h3>Hello! My name is Nethmi Himalsha and I enjoy creating things that
+                        live on the internet. I am  front - end web developer and UI & UX Engineer.
+                        I am 21 years old . And I live in Homagama. I love music and UI & UX side. 
+                        So I like to sepend my time with creating web sites and new things. </h3> </p>
+                        </br></br>
+                        <div class="sub-titles">
+                            <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI & UX</span></br>Designing web /App interfaces</li>
+                                <li><span>Web Development</span></br>Web App Development</li>
+                                <li><span>App Development</span></br>Mobile App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="Education">
+                            <ul>
+                                <li><span>2017</span></br>Graduated BSC (Hons) Computer Science at westminister Univercity ,UK</li>
+                                <li><span>2020</span></br>Masters Univercity Of westminister ,Uk</li>
+                                
+                            </ul>
+                        </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>        
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            } 
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+</script>
+
+
+</body>
+</html>
